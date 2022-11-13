@@ -6,17 +6,42 @@
     </head>
 
     <body>
-        <!-- Unordered List -->
-        <!-- <ul>
+        <h1>Unordered List</h1>
+        <ul>
             <li>Item 1</li>
-            <li>Item 2</li>
+            <li>
+                Item 2
+                <!-- The closing li tag is not here! -->
+                <ul>
+                    <li>Subitem 1</li>
+                    <li>
+                        Subitem 2
+                        <ul>
+                            <li>Sub-subitem 1</li>
+                            <li>Sub-subitem 2</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
             <li>Item 3</li>
-        </ul> -->
+        </ul>
 
-        <!-- Ordered List -->
-        <ol>
+        <h1>Ordered List</h1>
+        <ol type="i">
             <li>Item 1</li>
-            <li>Item 2</li>
+            <li>
+                Item 2
+                <ol reversed>
+                    <li>Subitem 1</li>
+                    <li>
+                        Subitem 2
+                        <ol start="30">
+                            <li>Sub-subitem 1</li>
+                            <li>Sub-subitem 2</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
             <li>Item 3</li>
         </ol>
     </body>
